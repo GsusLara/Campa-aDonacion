@@ -1,12 +1,9 @@
 {
-  "name": "boilerplate",
-  "version": "0.1.0",
+  "name": "bitradecode",
+  "version": "1.0.0",
   "private": true,
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/GsusLara/NextBoilerplate.git"
-  },
-  "author": "Jesus Lara Mendez",
+  
+  "author": "bitadecode",
   "license": "ISC",
   "scripts": {
     "dev": "next dev",
