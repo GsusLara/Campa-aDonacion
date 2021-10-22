@@ -1,12 +1,12 @@
 import Image from 'next/image'
-import logo from "../../public/bootstrap-logo.svg"
+import logo from "../../public/bitrade.png"
 export default function Navbar() {
     return (
-        <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top pb-0">
             <div className="container">
-                <a className="navbar-brand" href="#">
-                    <Image src={logo} alt="logo bootstrap" width="30" height="24" className="d-inline-block align-text-top" />
-                    <span className="m-2">BitradeCore</span>
+                <a className="navbar-brand p-0" href="#">
+                    <Image src={logo} alt="logo bootstrap" width="40" height="34" className="d-inline-block  p-0 " />
+                    <span className="m-2  align-top">BitradeCore</span>
                 </a>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>

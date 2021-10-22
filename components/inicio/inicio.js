@@ -9,7 +9,10 @@ export default function Inicio() {
                     <div className="col-10 text-center topinfo">
                         <p >¡Invierta de forma segura, con los expertos en trading!
                             <br />
-                            <span className="txg">Ganancias seguras todos los días </span><strong>sin comisiones</strong></p>
+                            <span className="txg">Ganancias seguras todos los días </span><strong>sin comisiones</strong>
+                            <br />
+                        </p>
+                        <FontAwesomeIcon className="rowdown position-absolute bottom-0 start-50 translate-middle-x" icon={["fas", "arrow-down"]} />
                     </div>
                 </div>
             </div>
@@ -24,6 +27,12 @@ export default function Inicio() {
                     <Card imagen={"economia-global.png"} descripcion={"bitradeCode"} titulo={"Futuro"} info={"El bitcoin es la moneda del futuro, descentralizada, segura, y con alcance mundial, sin pagos de inpuestos remesas o retenciones."}></Card>
                     <Card imagen={"gratis.png"} descripcion={"bitradeCode"} titulo={"Libertad"} info={"Las inversiones son la unica manera de conseguir la libertad financiera, con un ingresos pasivos seguros y confiables"}></Card>
                 </div>
+            </div>
+            <div className="cot4n">
+                
+            </div>
+            <div className="cot3n">
+                
             </div>
         </>
     )

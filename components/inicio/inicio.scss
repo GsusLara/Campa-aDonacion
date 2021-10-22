@@ -24,3 +24,36 @@
     height: 5rem;
     width: 5rem;
 }
+.rowdown{
+    font-size: 5rem;
+    color: #ffffff34;
+    margin-bottom: 15px;
+    animation: flecha 1.5s ease infinite;
+}
+.cot4n{
+    font-family: 'Roboto Condensed', sans-serif; 
+    min-height: 60vh;
+    background: #b6b6b6;
+}
+@keyframes flecha{
+    0%{
+        margin-bottom: 15px;
+    }
+    50%{
+        margin-bottom: 0;
+    }
+    100%{
+        margin-bottom: 15px;
+    }
+}
+
+
+
+@media (max-width:767px){
+    .topinfo{
+        font-size: 2rem;
+    }
+    .txg{
+        font-size: 1.5rem;
+    }
+}
