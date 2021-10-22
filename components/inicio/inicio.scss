@@ -18,7 +18,7 @@
 }
 .cot3n{
     font-family: 'Roboto Condensed', sans-serif; 
-    min-height: 80vh;
+    height: auto;
 }
 .img-card{
     height: 5rem;
@@ -26,28 +26,29 @@
 }
 .rowdown{
     font-size: 5rem;
-    color: #ffffff34;
-    margin-bottom: 15px;
+    color: #dddada6e;
+    margin-bottom: 50px;
     animation: flecha 1.5s ease infinite;
 }
 .cot4n{
     font-family: 'Roboto Condensed', sans-serif; 
-    min-height: 60vh;
+    height: auto;
     background: #b6b6b6;
+}
+.list-group-item{
+    border: none;
 }
 @keyframes flecha{
     0%{
-        margin-bottom: 15px;
+        margin-bottom: 50px;
     }
     50%{
-        margin-bottom: 0;
+        margin-bottom: 35px;
     }
     100%{
-        margin-bottom: 15px;
+        margin-bottom: 50px;
     }
 }
-
-
 
 @media (max-width:767px){
     .topinfo{

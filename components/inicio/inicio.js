@@ -17,22 +17,48 @@ export default function Inicio() {
                 </div>
             </div>
             <div className="container">
-                <div className="row justify-content-center cot3n">
-                    <div className="col-12 text-center mt-5">
+                <div className="row justify-content-center cot3n mb-5">
+                    <div className="col-12 text-center mt-5 ">
                         <h5>CONOZCA SOBRE NOSOTROS</h5>
-                        <span className="txg">¿Qué nos hace ser únicos?</span>
+                        <span className="txg">¿Qué nos hace únicos?</span>
                     </div>
-                    <Card imagen={"acuerdo.png"} descripcion={"bitradeCode"} titulo={"Confianza"} info={"Solidez y respaldo con más de diez años de experiencia en el estudio del mercado,con regulacion y licenciamiento NYSE y NASDAQ"}></Card>
+                    <Card imagen={"acuerdo.png"} descripcion={"bitradeCode"} titulo={"Confianza"} info={"Solidez y respaldo con más de diez años de experiencia en el estudio del mercado, operando en plataformas con regulación y licenciamiento NYSE y NASDAQ"}></Card>
                     <Card imagen={"crecimiento.png"} descripcion={"bitradeCode"} titulo={"Crecimiento"} info={"Nuestras transacciones y equipo de analistas financieros garantizan un crecimiento del capital independientemente del valor del mercado"}></Card>
-                    <Card imagen={"economia-global.png"} descripcion={"bitradeCode"} titulo={"Futuro"} info={"El bitcoin es la moneda del futuro, descentralizada, segura, y con alcance mundial, sin pagos de inpuestos remesas o retenciones."}></Card>
-                    <Card imagen={"gratis.png"} descripcion={"bitradeCode"} titulo={"Libertad"} info={"Las inversiones son la unica manera de conseguir la libertad financiera, con un ingresos pasivos seguros y confiables"}></Card>
+                    <Card imagen={"economia-global.png"} descripcion={"bitradeCode"} titulo={"Futuro"} info={"El bitcoin es la moneda del futuro, descentralizada, segura, y con alcance mundial, sin pagos de impuestos remesas o retenciones."}></Card>
+                    <Card imagen={"gratis.png"} descripcion={"bitradeCode"} titulo={"Libertad"} info={"Las inversiones son la única manera de conseguir la libertad financiera, generando ingresos pasivos seguros y confiables."}></Card>
                 </div>
             </div>
-            <div className="cot4n">
-                
+            <div className="cot4n text-center py-5 px-3 p-lg-5 fs-5">
+                <div className="container ">
+                    <h2 className="mb-4">¿Como ganamos?</h2>
+                    <p>
+                        La rentabilidad para poder ofrecerte la posibilidad de duplicar tu dinero en un plazo relativamente corto proviene de nuestro equipo profesional de analistas de mercado encargados de ejecutar operaciones de compra y venta del fondo, esta práctica es conocida mundialmente como <strong>Trading</strong>, es aplicable a todo tipo de títulos de valor presentes en el mercado como, acciones, divisas, cripto activos entre otros.
+                    </p>
+                    <p>
+                        Dada la alta volatilidad del Bitcoin, la percepción de una ganancia es relativamente rápida, se mantiene el fondo en BTC y durante el día varia su tipo de cambio constantemente, al haber un aumento en el valor respecto al dólar en una tasa superior a un 4% se ejecuta la venta, y esta se mantiene hasta percibir una caída superior a un 4% donde vuelve a convertirse en BTC.
+                    </p>
+                    <h1 className="mt-4 mb-4">¿sencillo?</h1>
+                    <p>¡inténtalo tú mismo!</p>
+                    <Link href="/tradeview">
+                        <a type="button" className="btn btn-outline-secondary">Trade view</a>
+                    </Link>
+                </div>
             </div>
-            <div className="cot3n">
-                
+            <div className="cot3n py-5 px-3 p-lg-5 fs-5 text-center">
+                <div className="container">
+                    <h1>¡Dejalo en manos de los expertos!</h1>
+                    <p className="mt-5">Unete a uno de nuestros fondos de inverción y disfruta de lo beneficios de ganar mientras duermes</p>
+                    <ul className="list-group m-5">
+                        <li className="list-group-item">Ganancias de hasta un 25%</li>
+                        <li className="list-group-item">Retiros sin comisiones ni costes</li>
+                        <li className="list-group-item">Sin pagos de anualidades o membresia</li>
+                        <li className="list-group-item">No requiere referido o patrocinador para ingresar</li>
+                        <li className="list-group-item">interés compuesto capilalizable en periodos programados</li>
+                    </ul>
+                    <Link href="/planes">
+                        <a type="button" className="btn btn-outline-success">Invierte ahora</a>
+                    </Link>
+                </div>
             </div>
         </>
     )
