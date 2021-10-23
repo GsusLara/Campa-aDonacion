@@ -32,32 +32,38 @@ export default function Inicio() {
                 <div className="container ">
                     <h2 className="mb-4">¿Como ganamos?</h2>
                     <p>
-                        La rentabilidad para poder ofrecerte la posibilidad de duplicar tu dinero en un plazo relativamente corto proviene de nuestro equipo profesional de analistas de mercado encargados de ejecutar operaciones de compra y venta del fondo, esta práctica es conocida mundialmente como <strong>Trading</strong>, es aplicable a todo tipo de títulos de valor presentes en el mercado como, acciones, divisas, cripto activos entre otros.
+                        La rentabilidad para poder ofrecerte la posibilidad de hacer crecer su dinero en un plazo relativamente corto proviene de nuestro equipo profesional de analistas de mercado encargados de ejecutar operaciones de compra y venta del fondo, esta práctica es conocida mundialmente como <strong>Trading</strong>, es aplicable a todo tipo de títulos de valor presentes en el mercado como, acciones, divisas, cripto activos entre otros.
                     </p>
                     <p>
                         Dada la alta volatilidad del Bitcoin, la percepción de una ganancia es relativamente rápida, se mantiene el fondo en BTC y durante el día varia su tipo de cambio constantemente, al haber un aumento en el valor respecto al dólar en una tasa superior a un 4% se ejecuta la venta, y esta se mantiene hasta percibir una caída superior a un 4% donde vuelve a convertirse en BTC.
                     </p>
-                    <h1 className="mt-4 mb-4">¿sencillo?</h1>
+                    <h1 className="mt-4 mb-4">¿Sencillo?</h1>
                     <p>¡inténtalo tú mismo!</p>
                     <Link href="/tradeview">
                         <a type="button" className="btn btn-outline-secondary">Trade view</a>
                     </Link>
                 </div>
             </div>
-            <div className="cot3n py-5 px-3 p-lg-5 fs-5 text-center">
+            <div className="cot3n py-5 px-2 p-lg-5 fs-5 ">
                 <div className="container">
-                    <h1>¡Dejalo en manos de los expertos!</h1>
-                    <p className="mt-5">Unete a uno de nuestros fondos de inverción y disfruta de lo beneficios de ganar mientras duermes</p>
-                    <ul className="list-group m-5">
-                        <li className="list-group-item">Ganancias de hasta un 25%</li>
-                        <li className="list-group-item">Retiros sin comisiones ni costes</li>
-                        <li className="list-group-item">Sin pagos de anualidades o membresia</li>
-                        <li className="list-group-item">No requiere referido o patrocinador para ingresar</li>
-                        <li className="list-group-item">interés compuesto capilalizable en periodos programados</li>
-                    </ul>
-                    <Link href="/planes">
-                        <a type="button" className="btn btn-outline-success">Invierte ahora</a>
-                    </Link>
+                    <div className="text-center">
+                        <h1>¡Dejalo en manos de los expertos!</h1>
+                        <p className="mt-5">Unete a uno de nuestros fondos de inverción y disfruta de lo beneficios de ganar mientras duermes</p>
+                    </div>
+                    <div className="text-start beneficios">
+                        <ul className="list-group mb-5 ">
+                            <li className="list-group-item">Ganancias de hasta un 25%</li>
+                            <li className="list-group-item">Retiros sin comisiones ni costos</li>
+                            <li className="list-group-item">Sin pagos de anualidades o membresias</li>
+                            <li className="list-group-item">No requiere referido o patrocinador para ingresar</li>
+                            <li className="list-group-item">interés compuesto capitalizable en periodos programados</li>
+                        </ul>
+                    </div>
+                    <div className="text-center">
+                        <Link href="/planes" >
+                            <a type="button" className="btn btn-outline-success">Invierte ahora</a>
+                        </Link>
+                    </div>
                 </div>
             </div>
         </>

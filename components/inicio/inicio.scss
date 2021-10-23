@@ -26,17 +26,24 @@
 }
 .rowdown{
     font-size: 5rem;
-    color: #dddada6e;
+    color: #e7e7e76e;
     margin-bottom: 50px;
     animation: flecha 1.5s ease infinite;
 }
 .cot4n{
     font-family: 'Roboto Condensed', sans-serif; 
     height: auto;
-    background: #b6b6b6;
+    background: #c4c4c4bd;
 }
 .list-group-item{
     border: none;
+    background: transparent;
+}
+.beneficios{
+    background-image: url("../../public/coins.png");
+    background-repeat: no-repeat;
+    background-size: 60vh;
+    background-position: 95% 10%;
 }
 @keyframes flecha{
     0%{
@@ -56,5 +63,9 @@
     }
     .txg{
         font-size: 1.5rem;
+    }
+    .beneficios{
+        background-size: 100vw;
+        background-position: -550% 100%;
     }
 }
