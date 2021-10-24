@@ -4,7 +4,7 @@ export default function Chart() {
     return (
         <TradingViewWidget
                     symbol="COINBASE:BTCUSD"
-                    theme={Themes.DARK}
+                    theme={Themes.light}
                     locale="es"
                     autosize
                     withdateranges

@@ -35,7 +35,7 @@ export default function Inicio() {
                         La rentabilidad para poder ofrecerte la posibilidad de hacer crecer su dinero en un plazo relativamente corto proviene de nuestro equipo profesional de analistas de mercado encargados de ejecutar operaciones de compra y venta del fondo, esta práctica es conocida mundialmente como <strong>Trading</strong>, es aplicable a todo tipo de títulos de valor presentes en el mercado como, acciones, divisas, cripto activos entre otros.
                     </p>
                     <p>
-                        Dada la alta volatilidad del Bitcoin, la percepción de una ganancia es relativamente rápida, se mantiene el fondo en BTC y durante el día varia su tipo de cambio constantemente, al haber un aumento en el valor respecto al dólar en una tasa superior a un 4% se ejecuta la venta, y esta se mantiene hasta percibir una caída superior a un 4% donde vuelve a convertirse en BTC.
+                        Dada la alta volatilidad del Bitcoin, la percepción de una ganancia es relativamente rápida, se mantiene el fondo en BTC y durante el día varia su tipo de cambio constantemente, al haber un aumento en el valor respecto al dólar en una tasa superior a un 4% se ejecuta la venta, y esta se mantiene hasta percibir una caída superior a un 4% donde vuelve a convertirse en BTC antes de vencerse la operación.
                     </p>
                     <h1 className="mt-4 mb-4">¿Sencillo?</h1>
                     <p>¡inténtalo tú mismo!</p>
@@ -48,7 +48,7 @@ export default function Inicio() {
                 <div className="container">
                     <div className="text-center">
                         <h1>¡Dejalo en manos de los expertos!</h1>
-                        <p className="mt-5">Unete a uno de nuestros fondos de inverción y disfruta de lo beneficios de ganar mientras duermes</p>
+                        <p className="mt-5">Únete a uno de nuestros fondos de inversión y disfruta de los beneficios de ganar mientras duermes</p>
                     </div>
                     <div className="text-start beneficios">
                         <ul className="list-group mb-5 ">
