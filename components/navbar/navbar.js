@@ -19,11 +19,13 @@ export default function Navbar() {
                         <Link href="/">
                             <a className="nav-link" aria-current="page" >Inicio</a>
                         </Link>
-                        <a className="nav-link" href="#">Mi Cuenta</a>
-                        <Link href="/planes">
+                        <Link href="/Cuenta">
+                        <a className="nav-link" >Mi Cuenta</a>
+                        </Link>
+                        <Link href="/Productos">
                             <a className="nav-link" >Fondos de inversión</a>
                         </Link>
-                        <Link href="/tradeview">
+                        <Link href="/Tradeview">
                             <a className="nav-link" >Trade View</a>
                         </Link>
                     </div>

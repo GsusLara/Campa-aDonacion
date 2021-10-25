@@ -29,7 +29,7 @@ const CardPlan = (props) => {
                     <h5 className="card-title fw-bold fs-3">{perfil}</h5>
                     <span className="card-subtitle mb-2 text-muted"><FontAwesomeIcon icon={["fas", "dollar-sign"]} /> <span className="m-2 fs-1">{monto}</span></span>
                     <p className="card-text fw-light">{descripcion}</p>
-                    <Link href="#">
+                    <Link href="/Cuenta">
                         <a type="button" className="btn btn-primary">ADQUIRIR</a>
                     </Link>
                 </div>

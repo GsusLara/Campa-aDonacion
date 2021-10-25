@@ -1,0 +1,9 @@
+.perfilbox{
+    min-height: calc( 100vh - 345px);
+}
+
+@media (max-width: 768px){
+    .perfilbox{
+    min-height: calc( 100vh - 529px);
+    }
+}

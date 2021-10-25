@@ -4,7 +4,7 @@
 @import "../components/navbar/navbar.scss";
 @import "../components/footer/footer.scss";
 @import "../components/planesComponent/planes.scss";
-
+@import "../components/MiCuenta/perfil/perfil.scss";
 html,
 body {
   padding: 0;
@@ -13,4 +13,8 @@ body {
 .grafico{
   margin-top: 41px;
   height: calc(100vh - 41px);
+}
+.vistas{
+ min-height: calc(100vh - 41px);
+ font-family: 'Roboto Condensed', sans-serif;
 }
