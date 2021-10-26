@@ -1,5 +1,6 @@
-import {createContext, useState} from 'react';
+import { createContext, useState } from 'react';
 import getState from "./flux.js";
+
 
 export const Context = createContext(null);
 
@@ -17,7 +18,7 @@ const injectContext = PassedComponent => {
 					})
 			})
 		);
-        return (
+		return (
 			<Context.Provider value={state}>
 				<PassedComponent {...props} />
 			</Context.Provider>
@@ -26,4 +27,4 @@ const injectContext = PassedComponent => {
 	return StoreWrapper;
 };
 
-export default injectContext;   
+export default injectContext;

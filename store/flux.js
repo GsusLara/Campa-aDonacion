@@ -1,11 +1,21 @@
+import ingles from "./ingles"
+import español from "./español"
+
 const getState = ({ getStore, getActions, setStore }) => {
 	return {
 		store: {
-			saludo:"Store Funciona"
+			diccionario:ingles,
+			idiomaActual:true,
 		},
 		actions: {
-			setSaludo: item => {
-				setStore({ saludo: item });
+			lenguaje: item => {
+				if (item == true){
+					setStore({ diccionario: ingles });
+					setStore({ idiomaActual: item });
+				}else{
+					setStore({ diccionario: español });
+					setStore({ idiomaActual: item });
+				}
 			}
 		}
 	};

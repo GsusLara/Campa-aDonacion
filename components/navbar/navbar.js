@@ -1,7 +1,12 @@
+import { useContext } from "react"
+import { Context } from "../../store/appContext";
 import Link from "next/link"
 import Image from 'next/image'
 import logo from "../../public/bitrade.png"
+
+
 export default function Navbar() {
+    const { store, actions } = useContext(Context);
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top pb-0">
             <div className="container">
@@ -17,10 +22,10 @@ export default function Navbar() {
                 <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div className="navbar-nav">
                         <Link href="/">
-                            <a className="nav-link" aria-current="page" >Inicio</a>
+                            <a className="nav-link" aria-current="page" >{store.diccionario.navbar.link1}</a>
                         </Link>
                         <Link href="/Cuenta">
-                        <a className="nav-link" >Mi Cuenta</a>
+                            <a className="nav-link" >Mi Cuenta</a>
                         </Link>
                         <Link href="/Productos">
                             <a className="nav-link" >Fondos de inversión</a>
@@ -28,7 +33,10 @@ export default function Navbar() {
                         <Link href="/Tradeview">
                             <a className="nav-link" >Trade View</a>
                         </Link>
+                        
                     </div>
+                    <div className="collapse navbar-collapse" />
+                        <a className="nav-link text-success idiomas" onClick={()=>actions.lenguaje(!store.idiomaActual)}>{store.diccionario.navbar.idiomas}</a>
                 </div>
             </div>
         </nav>

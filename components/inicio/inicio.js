@@ -1,7 +1,9 @@
 import Link from "next/link"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
+
 export default function Inicio() {
+    
     return (
         <>
             <div className="container-fluid topdiv ">
@@ -39,7 +41,7 @@ export default function Inicio() {
                     </p>
                     <h1 className="mt-4 mb-4">¿Sencillo?</h1>
                     <p>¡inténtalo tú mismo!</p>
-                    <Link href="/tradeview">
+                    <Link href="/Tradeview">
                         <a type="button" className="btn btn-outline-secondary">Trade view</a>
                     </Link>
                 </div>
@@ -60,7 +62,7 @@ export default function Inicio() {
                         </ul>
                     </div>
                     <div className="text-center">
-                        <Link href="/planes" >
+                        <Link href="/Productos" >
                             <a type="button" className="btn btn-outline-success">Invierte ahora</a>
                         </Link>
                     </div>
