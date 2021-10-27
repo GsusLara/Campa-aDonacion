@@ -1,27 +1,30 @@
+import { useContext } from "react"
+import { Context } from "../../store/appContext";
 import Link from "next/link"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default function PlanesComponent() {
+    const { store } = useContext(Context);
     return (
         <div className="container mt-5 planes">
             <div className="row justify-content-center">
                 <div className="col-11 text-center">
-                    <h1 className="fs-1 mt-3 mb-3">Adquiere un fondo a la medida!</h1>
-                    <p>Las opciones se ajustan a los principales perfiles de inversionistas, elige la que mejor te defina.</p>
+                    <h1 className="fs-1 mt-3 mb-3">{store.diccionario.planes.Titulo}</h1>
+                    <p>{store.diccionario.planes.Subtitulo}.</p>
                 </div>
-                <CardPlan perfil="Conservador" monto="100" descripcion="Ganancia total de un 25%"/>
-                <CardPlan perfil="Moderado" monto="500" descripcion="Ganancia total de un 35%"/>
-                <CardPlan perfil="Emprendedor" monto="1000" descripcion="Ganancia total de un 50%"/>
-                <CardPlan perfil="Audaz" monto="2500" descripcion="Ganancia total de un 75%"/>
-                <CardPlan perfil="Atrevido" monto="5000" descripcion="Ganancia total de un 85%"/>
-                <CardPlan perfil="Arriesgado" monto="10 000" descripcion="Ganancia total de un 95%"/>
+                <Cardplan store={store} perfil={store.diccionario.planes.Card1} monto="100" descripcion={store.diccionario.planes.Card1Texto}/>
+                <Cardplan store={store} perfil={store.diccionario.planes.Card2} monto="500" descripcion={store.diccionario.planes.Card2Texto}/>
+                <Cardplan store={store} perfil={store.diccionario.planes.Card3} monto="1000" descripcion={store.diccionario.planes.Card3Texto}/>
+                <Cardplan store={store} perfil={store.diccionario.planes.Card4} monto="2500" descripcion={store.diccionario.planes.Card4Texto}/>
+                <Cardplan store={store} perfil={store.diccionario.planes.Card5} monto="5000" descripcion={store.diccionario.planes.Card5Texto}/>
+                <Cardplan store={store} perfil={store.diccionario.planes.Card6} monto="10 000" descripcion={store.diccionario.planes.Card6Texto}/>
             </div>
         </div>
     )
 }
 
-const CardPlan = (props) => {
-    const { perfil, monto, descripcion } = props
+const Cardplan = (props) => {
+    const { store, perfil, monto, descripcion } = props
     return (
         <div className="col-10 col-lg-3 text-center m-2">
             <div className="card cardplan">
@@ -30,7 +33,7 @@ const CardPlan = (props) => {
                     <span className="card-subtitle mb-2 text-muted"><FontAwesomeIcon icon={["fas", "dollar-sign"]} /> <span className="m-2 fs-1">{monto}</span></span>
                     <p className="card-text fw-light">{descripcion}</p>
                     <Link href="/Cuenta">
-                        <a type="button" className="btn btn-primary">ADQUIRIR</a>
+                        <a type="button" className="btn btn-primary">{store.diccionario.planes.CardBoton}</a>
                     </Link>
                 </div>
             </div>

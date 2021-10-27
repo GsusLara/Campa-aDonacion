@@ -1,17 +1,19 @@
+import { useContext } from "react"
+import { Context } from "../../store/appContext";
 import Link from "next/link"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 
 export default function Inicio() {
-    
+    const { store } = useContext(Context);
     return (
         <>
             <div className="container-fluid topdiv ">
                 <div className="row justify-content-center align-items-center toprow">
                     <div className="col-10 text-center topinfo">
-                        <p >¡Invierta de forma segura, con los expertos en trading!
+                        <p >{store.diccionario.inicio.titulo}
                             <br />
-                            <span className="txg">Ganancias seguras todos los días </span><strong>sin comisiones</strong>
+                            <span className="txg">{store.diccionario.inicio.subtitulo}{" "} </span><strong>{store.diccionario.inicio.subtituloNegrita}</strong>
                             <br />
                         </p>
                         <FontAwesomeIcon className="rowdown position-absolute bottom-0 start-50 translate-middle-x" icon={["fas", "arrow-down"]} />
@@ -21,49 +23,49 @@ export default function Inicio() {
             <div className="container">
                 <div className="row justify-content-center cot3n mb-5">
                     <div className="col-12 text-center mt-5 ">
-                        <h5>CONOZCA SOBRE NOSOTROS</h5>
-                        <span className="txg">¿Qué nos hace únicos?</span>
+                        <h5>{store.diccionario.inicio.info1Titulo}</h5>
+                        <span className="txg">{store.diccionario.inicio.info1Subtitulo}</span>
                     </div>
-                    <Card imagen={"acuerdo.png"} descripcion={"bitradeCode"} titulo={"Confianza"} info={"Solidez y respaldo con más de diez años de experiencia en el estudio del mercado, operando en plataformas con regulación y licenciamiento NYSE y NASDAQ"}></Card>
-                    <Card imagen={"crecimiento.png"} descripcion={"bitradeCode"} titulo={"Crecimiento"} info={"Nuestras transacciones y equipo de analistas financieros garantizan un crecimiento del capital independientemente del valor del mercado"}></Card>
-                    <Card imagen={"economia-global.png"} descripcion={"bitradeCode"} titulo={"Futuro"} info={"El bitcoin es la moneda del futuro, descentralizada, segura, y con alcance mundial, sin pagos de impuestos remesas o retenciones."}></Card>
-                    <Card imagen={"gratis.png"} descripcion={"bitradeCode"} titulo={"Libertad"} info={"Las inversiones son la única manera de conseguir la libertad financiera, generando ingresos pasivos seguros y confiables."}></Card>
+                    <Card imagen={"acuerdo.png"} descripcion={"bitradeCode"} titulo={store.diccionario.inicio.card1Titulo} info={store.diccionario.inicio.card1Info}></Card>
+                    <Card imagen={"crecimiento.png"} descripcion={"bitradeCode"} titulo={store.diccionario.inicio.card2Titulo} info={store.diccionario.inicio.card2Info}></Card>
+                    <Card imagen={"economia-global.png"} descripcion={"bitradeCode"} titulo={store.diccionario.inicio.card3Titulo} info={store.diccionario.inicio.card3Info}></Card>
+                    <Card imagen={"gratis.png"} descripcion={"bitradeCode"} titulo={store.diccionario.inicio.card4Titulo} info={store.diccionario.inicio.card4Info}></Card>
                 </div>
             </div>
             <div className="cot4n text-center py-5 px-3 p-lg-5 fs-5">
                 <div className="container ">
-                    <h2 className="mb-4">¿Como ganamos?</h2>
+                    <h2 className="mb-4">{store.diccionario.inicio.info2titulo}</h2>
                     <p>
-                        La rentabilidad para poder ofrecerte la posibilidad de hacer crecer su dinero en un plazo relativamente corto proviene de nuestro equipo profesional de analistas de mercado encargados de ejecutar operaciones de compra y venta del fondo, esta práctica es conocida mundialmente como <strong>Trading</strong>, es aplicable a todo tipo de títulos de valor presentes en el mercado como, acciones, divisas, cripto activos entre otros.
+                        {store.diccionario.inicio.info2Parrafo1}
                     </p>
                     <p>
-                        Dada la alta volatilidad del Bitcoin, la percepción de una ganancia es relativamente rápida, se mantiene el fondo en BTC y durante el día varia su tipo de cambio constantemente, al haber un aumento en el valor respecto al dólar en una tasa superior a un 4% se ejecuta la venta, y esta se mantiene hasta percibir una caída superior a un 4% donde vuelve a convertirse en BTC antes de vencerse la operación.
+                        {store.diccionario.inicio.info2Parrafo2}
                     </p>
-                    <h1 className="mt-4 mb-4">¿Sencillo?</h1>
-                    <p>¡inténtalo tú mismo!</p>
+                    <h1 className="mt-4 mb-4">{store.diccionario.inicio.info2Subtitulo}</h1>
+                    <p>{store.diccionario.inicio.info2Expresion}</p>
                     <Link href="/Tradeview">
-                        <a type="button" className="btn btn-outline-secondary">Trade view</a>
+                        <a type="button" className="btn btn-outline-secondary">{store.diccionario.inicio.info2Boton}</a>
                     </Link>
                 </div>
             </div>
             <div className="cot3n py-5 px-2 p-lg-5 fs-5 ">
                 <div className="container">
                     <div className="text-center">
-                        <h1>¡Dejalo en manos de los expertos!</h1>
-                        <p className="mt-5">Únete a uno de nuestros fondos de inversión y disfruta de los beneficios de ganar mientras duermes</p>
+                        <h1>{store.diccionario.inicio.info3Titulo}</h1>
+                        <p className="mt-5">{store.diccionario.inicio.info3Texto}</p>
                     </div>
                     <div className="text-start beneficios">
                         <ul className="list-group mb-5 ">
-                            <li className="list-group-item">Ganancias de hasta un 25%</li>
-                            <li className="list-group-item">Retiros sin comisiones ni costos</li>
-                            <li className="list-group-item">Sin pagos de anualidades o membresias</li>
-                            <li className="list-group-item">No requiere referido o patrocinador para ingresar</li>
-                            <li className="list-group-item">interés compuesto capitalizable en periodos programados</li>
+                            <li className="list-group-item">{store.diccionario.inicio.info3Lista1}</li>
+                            <li className="list-group-item">{store.diccionario.inicio.info3Lista2}</li>
+                            <li className="list-group-item">{store.diccionario.inicio.info3Lista3}</li>
+                            <li className="list-group-item">{store.diccionario.inicio.info3Lista4}</li>
+                            <li className="list-group-item">{store.diccionario.inicio.info3Lista5}</li>
                         </ul>
                     </div>
                     <div className="text-center">
                         <Link href="/Productos" >
-                            <a type="button" className="btn btn-outline-success">Invierte ahora</a>
+                            <a type="button" className="btn btn-outline-success">{store.diccionario.inicio.info3Boton}</a>
                         </Link>
                     </div>
                 </div>

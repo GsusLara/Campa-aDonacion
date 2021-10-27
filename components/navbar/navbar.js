@@ -25,13 +25,13 @@ export default function Navbar() {
                             <a className="nav-link" aria-current="page" >{store.diccionario.navbar.link1}</a>
                         </Link>
                         <Link href="/Cuenta">
-                            <a className="nav-link" >Mi Cuenta</a>
+                            <a className="nav-link" >{store.diccionario.navbar.link2}</a>
                         </Link>
                         <Link href="/Productos">
-                            <a className="nav-link" >Fondos de inversión</a>
+                            <a className="nav-link" >{store.diccionario.navbar.link3}</a>
                         </Link>
                         <Link href="/Tradeview">
-                            <a className="nav-link" >Trade View</a>
+                            <a className="nav-link" >{store.diccionario.navbar.link4}</a>
                         </Link>
                         
                     </div>
