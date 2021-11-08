@@ -5,7 +5,6 @@ import Perfil from "../components/MiCuenta/perfil"
 export default function Cuenta() {
     return (
         <Layout>
-            {/* <Login/> */}
             <Perfil/>
         </Layout>
     )
