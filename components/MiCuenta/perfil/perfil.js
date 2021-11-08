@@ -17,29 +17,27 @@ export default function Perfil() {
                 <div className="col-12">
                     <h3>Detalle de inversiones</h3>
                     <table className="table mt-3">
-                        <thead>
+                        {/* <thead className="text-center">
                             <tr>
-                                <th scope="col">Fecha</th>
+                                
                                 <th scope="col">Transaccion</th>
                                 <th scope="col">Monto</th>
                                 <th scope="col">Progreso</th>
                                 <th scope="col">Acciones</th>
                             </tr>
-                        </thead>
-                        <tbody>
+                        </thead> */}
+                        <tbody className="text-center">
                             <tr>
-                                <td>26/10/2021</td>
-                                <td>Inversión</td>
+                                <th scope="row"className="col-12">Inversión</th>
                                 <td>$ 100</td>
-                                <td>
+                                <td className="col-12">
                                     <div className="progress">
                                         <div className="progress-bar" role="progressbar" style={{ width: "1%" }} aria-valuenow="1" aria-valuemin="1" aria-valuemax="100">1%</div>
                                     </div>
                                 </td>
-                                <td>
+                                <td className="col-12">
                                     <div className="d-grid gap-2 d-md-block">
                                         <button className="btn btn-danger mx-3" type="button">Retirar inversión</button>
-                                        <button className="btn btn-success" type="button" disabled>Cobrar</button>
                                     </div>
                                 </td>
                             </tr>
