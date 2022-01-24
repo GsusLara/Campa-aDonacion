@@ -43,9 +43,6 @@ export default function Inicio() {
                     </p>
                     <h1 className="mt-4 mb-4">{store.diccionario.inicio.info2Subtitulo}</h1>
                     <p>{store.diccionario.inicio.info2Expresion}</p>
-                    <Link href="/Tradeview">
-                        <a type="button" className="btn btn-outline-secondary">{store.diccionario.inicio.info2Boton}</a>
-                    </Link>
                 </div>
             </div>
             <div className="cot3n py-5 px-2 p-lg-5 fs-5 ">
@@ -64,9 +61,6 @@ export default function Inicio() {
                         </ul>
                     </div>
                     <div className="text-center">
-                        <Link href="/Productos" >
-                            <a type="button" className="btn btn-outline-success">{store.diccionario.inicio.info3Boton}</a>
-                        </Link>
                     </div>
                 </div>
             </div>

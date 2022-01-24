@@ -1,9 +1,8 @@
 export default {
     navbar: {
-        link1: "Home",
-        link2: "My account",
-        link3: "Investment",
-        link4: "Trade View",
+        link2: "About us",
+        link3: "Our goals",
+        link4: "Donate",
         idiomas: "Español"
     },
     footer:{

@@ -1,9 +1,8 @@
 export default {
     navbar: {
-        link1: "Inicio",
-        link2: "Mi cuenta",
-        link3: "Invertir",
-        link4: "Vista de Mercado",
+        link2: "¿Quienes somos?",
+        link3: "Objetivos",
+        link4: "Donar",
         idiomas: "English"
     },
     footer: {
@@ -12,9 +11,9 @@ export default {
         derechos: "2021 BitradeCore. Todos los derechos reservados."
     },
     inicio: {
-        titulo: "¡Invierta de forma segura, con los expertos en trading!",
-        subtitulo: "Ganancias seguras",
-        subtituloNegrita: "sin comisiones",
+        titulo: "¡Ayudanos a cumplir nuestro sueño!",
+        subtitulo: "conoce nuestra",
+        subtituloNegrita: "historia",
         info1Titulo: "CONOZCA SOBRE NOSOTROS",
         info1Subtitulo: "¿Qué nos hace únicos?",
         card1Titulo: "Confianza",
