@@ -21,6 +21,11 @@ export default function Navbar() {
                 <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div className="container">
                         <ul className="navbar-nav ">
+                        <li>
+                                <LinkScroll to="top" >
+                                    <span className="nav-link fs-3 py-0 my-0 me-2" ><FontAwesomeIcon icon={["fas", "angle-double-up"]} /></span>
+                                </LinkScroll>
+                            </li>
                             <li>
                                 <LinkScroll to="about" >
                                     <span className="nav-link fs-5" >{store.diccionario.navbar.link2}</span>

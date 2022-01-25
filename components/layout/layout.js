@@ -1,5 +1,5 @@
 import Navbar from "../navbar"
-import Footer from "../footer"
+
 
 export default function Layout(props) {
     const { children } = props
@@ -7,7 +7,6 @@ export default function Layout(props) {
         <div className="container-fluid Pagina">
             <Navbar/>
                 {children}
-            <Footer/>
         </div>
     )
 }

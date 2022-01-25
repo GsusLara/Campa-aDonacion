@@ -1,0 +1,17 @@
+.donateBox{
+    font-family: 'Roboto Condensed', sans-serif;
+    min-height: 100vh;
+    padding-top:70px;
+}
+.beneficios{
+    background-image: url("../../public/coins.png");
+    background-repeat: no-repeat;
+    background-size: 60vh;
+    background-position: 95% 10%;
+}
+@media (max-width:767px){
+    .beneficios{
+        background-size: 100vw;
+        background-position: -550% 100%;
+    }
+}
