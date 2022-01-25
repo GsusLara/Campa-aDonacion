@@ -1,7 +1,16 @@
+.navbar{
+    background: #0b7dffd8;
+}
 .navbar-toggler{
     border: none;
 }
 .nav-link, .idiomas{
     color:#ffffff;
     cursor: pointer;
+}
+.menuicon{
+    color:#ffffff;
+} 
+.navbar-toggler:focus {
+        box-shadow: none;
 }

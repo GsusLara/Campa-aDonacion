@@ -3,16 +3,14 @@
 @import "../components/inicio/inicio.scss";
 @import "../components/navbar/navbar.scss";
 @import "../components/footer/footer.scss";
+@import "../components/about/about.scss";
+@import "../components/goals/goals.scss";
+
 html,
 body {
   padding: 0;
   margin: 0;
-}
-.grafico{
-  margin-top: 41px;
-  height: calc(100vh - 41px);
-}
-.vistas{
- min-height: calc(100vh - 41px);
- font-family: 'Roboto Condensed', sans-serif;
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
