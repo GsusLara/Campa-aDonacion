@@ -1,30 +1,24 @@
-# Proyecto Next JS
+# Campaña para la recoleccion de fondos
 
-## Requerimientos 
-- Asegurate de usar una version de node superior a la 14
+## Descripcion
+- Pagina web informativa para la recolección de capital en proyecto de emprendimiento.
 
-## Iniciar proyecto basado en este boilerplate
+## Iniciar proyecto 
 
-1. cambia los datos del proyecto en los archivos  `package.json`  y tambien en `/pages/_document.js`
-2. instala los paquetes
-$ yarn
-4. inicia el servidor web para la vista previa de tus cambios
+1.  instala los paquetes
+```bash
+ yarn
+```
+
+2. inicia el servidor web para la vista previa de tus cambios
 ```bash
 npm run dev
 # or
 yarn dev
 ```
-5. inicia en el navegador  
+3. inicia en el navegador  
 [http://localhost:3000](http://localhost:3000)
 
-
-## Descripcion
-Esta plantilla se basa en Next JS y React en su version 17,
-para los estilos y componentes se utiliza Sass y bootstrap 5. 
-
-## Saber Más
-
-Para conocer más sobre Next.js, mira los siguientes recursos:
-
-- [Next.js Documentation](https://nextjs.org/docs) - aprende NEXT JS, con su documentación.
-- [Learn Next.js](https://nextjs.org/learn) - tutorial interactivo.
+## recursos
+- [Next.js Documentation](https://nextjs.org/docs)
+- [bitcoinjs-lib] (https://github.com/bitcoinjs/bitcoinjs-lib) 
