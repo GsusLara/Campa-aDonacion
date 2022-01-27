@@ -7,20 +7,20 @@ export default function About() {
         <div className="container aboutBox d-flex align-items-center" id="about">
             <div className="row justify-content-center">
                 <div className="col-12 text-center mt-5 mb-5">
-                    <h5>{store.diccionario.inicio.info1Titulo}</h5>
-                    <span className="txg">{store.diccionario.inicio.info1Subtitulo}</span>
+                    <h5>{store.diccionario.about.info1Titulo}</h5>
+                    <span className="txg">{store.diccionario.about.info1Subtitulo}</span>
                     <div className="row">
                     <Card
-                    imagen={"acuerdo.png"} descripcion={"bitradeCode"} titulo={store.diccionario.inicio.card1Titulo} info={store.diccionario.inicio.card1Info}>
+                    imagen={"acuerdo.png"} descripcion={"bitradeCode"} titulo={store.diccionario.about.card1Titulo} info={store.diccionario.about.card1Info}>
                 </Card>
                 <Card
-                    imagen={"crecimiento.png"} descripcion={"bitradeCode"} titulo={store.diccionario.inicio.card2Titulo} info={store.diccionario.inicio.card2Info}>
+                    imagen={"crecimiento.png"} descripcion={"bitradeCode"} titulo={store.diccionario.about.card2Titulo} info={store.diccionario.about.card2Info}>
                 </Card>
                 <Card
-                    imagen={"economia-global.png"} descripcion={"bitradeCode"} titulo={store.diccionario.inicio.card3Titulo} info={store.diccionario.inicio.card3Info}>
+                    imagen={"economia-global.png"} descripcion={"bitradeCode"} titulo={store.diccionario.about.card3Titulo} info={store.diccionario.about.card3Info}>
                 </Card>
                 <Card
-                    imagen={"gratis.png"} descripcion={"bitradeCode"} titulo={store.diccionario.inicio.card4Titulo} info={store.diccionario.inicio.card4Info}>
+                    imagen={"gratis.png"} descripcion={"bitradeCode"} titulo={store.diccionario.about.card4Titulo} info={store.diccionario.about.card4Info}>
                 </Card>
                     </div>
                 </div>

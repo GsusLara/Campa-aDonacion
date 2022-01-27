@@ -7,15 +7,15 @@ export default function Goals() {
         <section className="goalsBox text-center fs-5 d-flex align-items-center" id="objetives">
             <div className="container-fluid infoGoals py-5">
                 <div className="container mt-5">
-                    <h2 className="mb-4">{store.diccionario.inicio.info2titulo}</h2>
+                    <h2 className="mb-4">{store.diccionario.goals.info2titulo}</h2>
                     <p>
-                        {store.diccionario.inicio.info2Parrafo1}
+                        {store.diccionario.goals.info2Parrafo1}
                     </p>
                     <p>
-                        {store.diccionario.inicio.info2Parrafo2}
+                        {store.diccionario.goals.info2Parrafo2}
                     </p>
-                    <h1 className="mt-4 mb-4">{store.diccionario.inicio.info2Subtitulo}</h1>
-                    <p>{store.diccionario.inicio.info2Expresion}</p>
+                    <h1 className="mt-4 mb-4">{store.diccionario.goals.info2Subtitulo}</h1>
+                    <p>{store.diccionario.goals.info2Expresion}</p>
                 </div>
             </div>
         </section >
