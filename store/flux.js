@@ -4,7 +4,7 @@ import español from "./español"
 const getState = ({ getStore, getActions, setStore }) => {
 	return {
 		store: {
-			diccionario: ingles,
+			diccionario: español,
 			idiomaActual: true,
 		},
 		actions: {

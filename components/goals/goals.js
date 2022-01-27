@@ -1,5 +1,6 @@
 import { useContext } from "react"
 import { Context } from "../../store/appContext";
+import { Link as LinkScroll } from "react-scroll"
 
 export default function Goals() {
     const { store } = useContext(Context);
@@ -14,8 +15,10 @@ export default function Goals() {
                     <p>
                         {store.diccionario.goals.info2Parrafo2}
                     </p>
-                    <h1 className="mt-4 mb-4">{store.diccionario.goals.info2Subtitulo}</h1>
-                    <p>{store.diccionario.goals.info2Expresion}</p>
+                    <p className="fs-4" >{store.diccionario.goals.info2Expresion}</p>
+                    <LinkScroll to="donate" >
+                        <span className="fw-bold botonDonar">{store.diccionario.goals.info2Boton}</span>
+                    </LinkScroll>
                 </div>
             </div>
         </section >

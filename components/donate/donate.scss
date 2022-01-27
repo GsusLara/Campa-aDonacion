@@ -3,15 +3,20 @@
     min-height: 100vh;
     padding-top:70px;
 }
-.beneficios{
-    background-image: url("../../public/coins.png");
-    background-repeat: no-repeat;
-    background-size: 60vh;
-    background-position: 95% 10%;
+.btnPaypal , .btnBtc{
+    border-radius: 10px;
+    background: #ffffff;
+    border-color: rgb(209, 208, 208);
 }
-@media (max-width:767px){
-    .beneficios{
-        background-size: 100vw;
-        background-position: -550% 100%;
-    }
-}
+// .beneficios{
+//     background-image: url("");
+//     background-repeat: no-repeat;
+//     background-size: 60vh;
+//     background-position: 95% 10%;
+// }
+// @media (max-width:767px){
+//     .beneficios{
+//         background-size: 100vw;
+//         background-position: -550% 100%;
+//     }
+// }

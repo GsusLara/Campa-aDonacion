@@ -3,17 +3,16 @@ export default {
         link2: "About us",
         link3: "Our goals",
         link4: "Donate",
-        idiomas: "Español"
     },
     footer: {
         Titulo: "DATA AND USE POLICIES",
-        Texto: "In accordance with the laws of protection of personal data of the users of the platform, we recommend that you take a moment to review the key points established for the use of the data and services offered by BitradeCode, you can access our documentation at any time .",
-        derechos: "2021 BitradeCore. All rights reserved."
+        Texto: "In accordance with personal data protection laws, it is reported that this website does not obtain or store any type of user information.",
+        derechos: "2022 All rights reserved."
     },
     inicio: {
-        titulo: "Invest safely, with the trading experts!",
-        subtitulo: "Secure earnings",
-        subtituloNegrita: "without commissions"
+        titulo: "Did you know you can make a big change!",
+        subtitulo: "Help us make our dream ",
+        subtituloNegrita: "come true"
     },
     about: {
         info1Titulo: "KNOW ABOUT US",

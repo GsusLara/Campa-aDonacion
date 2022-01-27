@@ -1,27 +1,40 @@
 import { useContext } from "react"
 import { Context } from "../../store/appContext";
 import Footer from "../footer";
+import Image from 'next/image'
+import btc from "../../public/btc.png"
+import paypal from "../../public/paypal.png"
 
 export default function Donate() {
     const { store } = useContext(Context);
     return (
-            <div className="donateBox fs-5 d-flex flex-column " id="donate">
-                <div className="container mt-3 mb-5">
-                    <div className="text-center">
-                        <h1>{store.diccionario.donate.info3Titulo}</h1>
-                        <p className="mt-5">{store.diccionario.donate.info3Texto}</p>
-                    </div>
-                    <div className="text-start beneficios">
-                        <ul className="list-group">
-                            <li className="list-group-item">{store.diccionario.donate.info3Lista1}</li>
-                            <li className="list-group-item">{store.diccionario.donate.info3Lista2}</li>
-                            <li className="list-group-item">{store.diccionario.donate.info3Lista3}</li>
-                            <li className="list-group-item">{store.diccionario.donate.info3Lista4}</li>
-                            <li className="list-group-item">{store.diccionario.donate.info3Lista5}</li>
-                        </ul>
-                    </div>
+        <div className="donateBox fs-5 d-flex flex-column " id="donate">
+            <div className="container mt-5 mb-5">
+                <div className="text-center">
+                    <h1>{store.diccionario.donate.info3Titulo}</h1>
+                    <p className="mt-5">{store.diccionario.donate.info3Texto}</p>
                 </div>
-                <Footer />
+                <div className="row justify-content-center">
+                    <div className="col-6 col-md-2 m-5">
+                        <button type="button" className="btnBtc p-2">
+                            <Image
+                                src={btc}
+                                alt="donar bitcoin"
+                            />
+                        </button>
+                    </div>
+                    <div className="col-6 col-md-2 m-5">
+                        <button type="button"  className="btnPaypal p-2 pb-0">
+                            <Image
+                                src={paypal}
+                                alt="donar paypal"
+                            />
+                        </button>
+                    </div>
+
+                </div>
             </div>
+            <Footer />
+        </div>
     );
 }

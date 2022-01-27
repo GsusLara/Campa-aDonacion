@@ -7,12 +7,9 @@ export default function About() {
         <div className="container aboutBox d-flex align-items-center" id="about">
             <div className="row justify-content-center">
                 <div className="col-12 text-center mt-5 mb-5">
-                    <h5>{store.diccionario.about.info1Titulo}</h5>
-                    <span className="txg">{store.diccionario.about.info1Subtitulo}</span>
-                    <div className="row">
-                    <Card
-                    imagen={"acuerdo.png"} descripcion={"bitradeCode"} titulo={store.diccionario.about.card1Titulo} info={store.diccionario.about.card1Info}>
-                </Card>
+                    <h1>{store.diccionario.about.info1Titulo}</h1>
+                    <p className="fs-4 mt-4">{store.diccionario.about.info1Subtitulo}</p>
+                    <div className="row justify-content-md-center">
                 <Card
                     imagen={"crecimiento.png"} descripcion={"bitradeCode"} titulo={store.diccionario.about.card2Titulo} info={store.diccionario.about.card2Info}>
                 </Card>
@@ -32,7 +29,7 @@ const Card = (props) => {
     const { imagen, descripcion, titulo, info } = props
     return (
         <div className="col-12 col-md-6 col-lg-3">
-            <div className="card text-center mt-5 p-2 mx-auto" style={{ width: "18rem", border: "none" }}>
+            <div className="card text-center mt-5 p-2 mx-auto fs-6" style={{ width: "18rem", border: "none" }}>
                 <img className="img-card mx-auto" src={imagen} alt={descripcion} />
                 <div className="card-body">
                     <h5 className="card-title"> <strong>{titulo}</strong></h5>
