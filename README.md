@@ -21,4 +21,4 @@ yarn dev
 
 ## recursos
 - [Next.js Documentation](https://nextjs.org/docs)
-- [bitcoinjs-lib] (https://github.com/bitcoinjs/bitcoinjs-lib) 
+- [bitcoinjs-lib](https://github.com/bitcoinjs/bitcoinjs-lib) 
