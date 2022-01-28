@@ -7,10 +7,19 @@
 .nav-link, .idiomas{
     color:#ffffff;
     cursor: pointer;
+    &:hover{
+        color: rgba(204, 204, 204, 0.904);
+    }
 }
-.menuicon{
+.menuicon , .dropdown-item{
     color:#ffffff;
 } 
-.navbar-toggler:focus {
+.dropdown-item{
+    cursor: pointer;;
+} 
+.navbar-toggler:focus , .idiomas:focus{
         box-shadow: none;
+}
+.dropdown-menu{
+    background: #0b7dffd8;
 }

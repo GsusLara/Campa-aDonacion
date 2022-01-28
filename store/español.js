@@ -29,7 +29,7 @@ export default {
         info2Parrafo1: "Esta es mi forma de llegar a muchas personas, de manera clara y sencilla para decirles que tenemos algo en común, un gran sueño, que poco a poco avanza y está cada vez más cerca, trabajo duro para lograrlo, pero sé que hay muchos que sin condición y sin esperar nada a cambio pueden y quieren ayudarme a cumplirlo.",
         info2Parrafo2: "Quizá muchos de los que visiten este sitio web, ya lograron muchos de sus objetivos de vida, se que les habría encantado poder recibir una pequeña ayuda, hoy puedes colaborar con un soñador como tú...",
         info2Expresion: "¡No hay monto mínimo ni máximo!",
-        info2Boton: " Quiero colaborar"
+        info2Boton: "Quiero colaborar"
     },
     donate: {
         info3Titulo: "¡Lo hicimos fácil para ti!",

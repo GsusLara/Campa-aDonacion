@@ -1,5 +1,6 @@
 import ingles from "./ingles"
 import español from "./español"
+import frances from "./frances"
 
 const getState = ({ getStore, getActions, setStore }) => {
 	return {
@@ -8,13 +9,13 @@ const getState = ({ getStore, getActions, setStore }) => {
 			idiomaActual: true,
 		},
 		actions: {
-			lenguaje: item => {
-				if (item == true) {
+			lenguaje: idioma => {
+				if (idioma == "en") {
 					setStore({ diccionario: ingles });
-					setStore({ idiomaActual: item });
-				} else {
+				} else if(idioma =="es"){
 					setStore({ diccionario: español });
-					setStore({ idiomaActual: item });
+				}else{
+					setStore({ diccionario: frances });
 				}
 			}
 		}

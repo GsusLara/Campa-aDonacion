@@ -10,9 +10,9 @@ class MyDocument extends Document {
         return (
             <Html>
                 <Head>
-                    <meta name="bitradeCode" content="Invierta seguro" />
+                    <meta name="fulfill dream" content="Donar" />
                     <meta charSet="utf-8" />
-                    <link rel="icon" href="/favicon.ico" />
+                    <link rel="icon" href="/help.ico" />
                 </Head>
                 <body>
                     <Main />

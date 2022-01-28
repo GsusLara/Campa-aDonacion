@@ -1,6 +1,6 @@
 export default {
     navbar: {
-        link2: "About us",
+        link2: "Who are we?",
         link3: "Our goals",
         link4: "Donate",
     },
@@ -15,35 +15,24 @@ export default {
         subtituloNegrita: "come true"
     },
     about: {
-        info1Titulo: "KNOW ABOUT US",
-        info1Subtitulo: "What makes us unique?",
-        card1Titulo: "Confidence",
-        card1Info: "Strength and support with more than ten years of experience in market research, operating on platforms with NYSE and NASDAQ regulation and licensing",
-        card2Titulo: "Increase",
-        card2Info: "Our transactions and team of financial analysts ensure capital growth regardless of market value",
+        info1Titulo: "Is it important to know?",
+        info1Subtitulo: "We all have dreams, life goals, which are often frustrated by situations that get out of hand, I know you also have life plans and usually they always revolve around 3 important reasons:",
+        card2Titulo: "growth",
+        card2Info: "The objectives always seek growth, economic, social or personal, but it is something that gives us a sense of progress.",
         card3Titulo: "Future",
-        card3Info: "Bitcoin is the currency of the future, decentralized, secure, and with global reach, without payment of taxes, remittances or withholdings.",
+        card3Info: "They always look to a prosperous future that is not always about wealth, it can be about tranquility and happiness.",
         card4Titulo: "Freedom",
-        card4Info: "Investments are the only way to achieve financial freedom, generating safe and reliable passive income."
+        card4Info: "But the most important thing is freedom, to be the owner of every minute of life that goes away and does not come back."
     },
     goals: {
-        info2titulo: "How do we earn money?",
-        info2Parrafo1: "The profitability to be able to grow your money in a relatively short term comes from our professional team of market analysts in charge of executing the fund's purchase and sale operations, this practice is known worldwide as Trading, it is applicable to all types of securities present in the market such as stocks, currencies, crypto assets among others.",
-        info2Parrafo2: "Due to the high volatility of Bitcoin, the perception of a profit is relatively fast, the fund is maintained in BTC and during the day its exchange rate varies constantly, as there is an increase in value against the dollar at a rate higher than 4 % the sale is executed, and this is maintained until a fall of more than 4% is perceived where it is converted back into BTC before the operation expires.",
-        info2Subtitulo: "Easy?",
-        info2Expresion: "Try it yourself!",
-        info2Boton: "Training View"
+        info2titulo: "What is the purpose of all this?",
+        info2Parrafo1: "This is my way of reaching many people, in a clear and simple way to tell them that we have something in common, a great dream, that little by little advances, I work hard to achieve it, but I know that there are many who without condition and without expecting anything in return they can and want to help me fulfill it.",
+        info2Parrafo2: "Perhaps many of those who visit this website have already achieved many of their life goals, I know they would have loved to receive a little help, today you can collaborate with a dreamer like you...",
+        info2Expresion: "There is no minimum or maximum amount!",
+        info2Boton: "I want to collaborate"
     },
-    donate:{
-        info3Titulo: "Leave it to the experts!",
-        info3Texto: "Join one of our investment funds and enjoy the benefits of earning while you sleep",
-        info3Lista1: "Withdraw your investment whenever you want",
-        info3Lista2: "No fees or withdrawal costs",
-        info3Lista3: "We have no annuity or membership fees",
-        info3Lista4: "Registration without referrals or sponsors",
-        info3Lista5: "compound interest paid in semi-annual periods",
-        info3Boton: "INVEST NOW"
+    donate: {
+        info3Titulo: "We made it easy for you!",
+        info3Texto: "Many payment options can be insecure or complicated so we look at the two easiest and most reliable, select the one you want."
     }
-   
-
 }

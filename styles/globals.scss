@@ -1,5 +1,5 @@
 @import "~bootstrap/scss/bootstrap";
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap");
 @import "../components/layout/layout.scss";
 @import "../components/inicio/inicio.scss";
 @import "../components/navbar/navbar.scss";
@@ -14,5 +14,9 @@ body {
   margin: 0;
   &::-webkit-scrollbar {
     display: none;
+  }
+  & {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
   }
 }

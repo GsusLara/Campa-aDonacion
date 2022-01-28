@@ -22,7 +22,7 @@ export default function Footer() {
             </div>
             <div className="text-center py-2 px-0 fs-6 " style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}>
                 <span>
-                    Copyright <FontAwesomeIcon icon={["far", "copyright"]} />{" "}{store.diccionario.footer.derechos}
+                    Copyright <FontAwesomeIcon icon={["far", "copyright"]} />{" "}fulfill dream{" "}{store.diccionario.footer.derechos}
                 </span>
             </div>
         </footer>
