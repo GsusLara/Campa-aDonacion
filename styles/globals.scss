@@ -7,6 +7,7 @@
 @import "../components/about/about.scss";
 @import "../components/goals/goals.scss";
 @import "../components/donate/donate.scss";
+@import "../components/btcPay/btcPay.scss";
 
 html,
 body {
@@ -19,4 +20,10 @@ body {
     -ms-overflow-style: none;
     scrollbar-width: none;
   }
+}
+
+.donarBox{
+    min-height: 100vh;
+    font-family: "Roboto Condensed", sans-serif;
+    height: auto;
 }

@@ -1,5 +1,6 @@
 import { useContext } from "react"
 import { Context } from "../../store/appContext";
+import Link from "next/link"
 import Footer from "../footer";
 import Image from 'next/image'
 import btc from "../../public/btc.png"
@@ -16,12 +17,14 @@ export default function Donate() {
                 </div>
                 <div className="row justify-content-center">
                     <div className="col-6 col-md-2 m-5">
-                        <button type="button" className="btnBtc p-2">
+                        <Link href={"/donar"}>
+                        <a type="button" className="btnBtc p-2">
                             <Image
                                 src={btc}
                                 alt="donar bitcoin"
                             />
-                        </button>
+                        </a>
+                        </Link>
                     </div>
                     <div className="col-6 col-md-2 m-5">
                         <button type="button"  className="btnPaypal p-2 pb-0">

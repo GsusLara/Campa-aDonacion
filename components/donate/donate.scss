@@ -6,5 +6,8 @@
 .btnPaypal , .btnBtc{
     border-radius: 10px;
     background: #ffffff;
-    border-color: rgb(209, 208, 208);
+    border: 2px solid rgb(209, 208, 208);
+    &:hover{
+        box-shadow: 2px 2px 5px ;
+    }
 }
