@@ -48,11 +48,11 @@ export default function BtcPay() {
 
     // Render
     if (direccion == "pendiente") {
-        return <Cargando />
+        return <Cargando store={store} />
     } else if (direccion == "pagado") {
         return <Pagado monto={monto} limpiarPago={limpiarPago} store={store} />
     } else {
-        return <Tiquet direccion={direccion} limpiarPago={limpiarPago} validarPago={validarPago} />
+        return <Tiquet direccion={direccion} limpiarPago={limpiarPago} validarPago={validarPago} store={store} />
     }
 
 }
@@ -60,49 +60,48 @@ export default function BtcPay() {
 
 //Components
 
-const Cargando = () => {
+const Cargando = (props) => {
+    const { store } = props
     return (
         <div className="position-relative mx-auto">
-        <div className="d-flex align-items-center">
-            <strong>Loading...</strong>
-            <div className="spinner-border m-3" role="status" aria-hidden="true"></div>
-        </div>
+            <div className="d-flex align-items-center">
+                <strong>{store.diccionario.btcP4y.cargand0}</strong>
+                <div className="spinner-border m-3" role="status" aria-hidden="true"></div>
+            </div>
         </div>
     )
 }
 
 const Tiquet = (props) => {
-    const { direccion, limpiarPago, validarPago } = props;
+    const { direccion, limpiarPago, validarPago, store } = props;
     useEffect(() => {
         setTimeout(() => {
             validarPago(direccion);
         }, 2000);
     }, [])
     return (
-        <div className="row justify-content-center text-center">
-            <div className="col-12 text-center mt-4">
-                <h4>Escanea o copia la dirección de pago</h4>
-                <div className="col-10 col-lg-3 mx-auto text-center qrcode">
-                    <img src={`https://chart.googleapis.com/chart?chs=500x500&cht=qr&chl=${direccion}`} className="img-fluid p-0" alt="BTC wallet" />
-                </div>
-                <div className="col-10 col-lg-5 col-xxl-4 mx-auto text-center ">
-                    <div className="position-relative mt-2 mt-xxl-5 hash ">
-                        <div className="p-3">
-                            <span>{direccion}</span>
-                        </div>
-                        <CopyToClipboard text={direccion}>
-                            <FontAwesomeIcon icon={["fas", "copy"]} className="clipboard position-absolute top-0 end-0" />
-                        </CopyToClipboard>
-                    </div>
-                </div>
-                <div className="col-10 mt-xxl-3 text-center mx-auto">
-                    <span className="spinner-border m-2 align-middle spinner" role="status" />
-                    <strong>Esperando la confirmación en la red</strong>
-                </div>
-                <Link href="/">
-                    <a type="button" className="btn btn-danger mt-3" onClick={() => limpiarPago()}>Cancelar</a>
-                </Link>
+        <div className="col-12 text-center mt-5">
+            <h4>{store.diccionario.btcP4y.p4gandoT1tulo}</h4>
+            <div className="col-8 col-md-5 col-lg-3 col-xxl-4 mx-auto text-center qrcode">
+                <img src={`https://chart.googleapis.com/chart?chs=500x500&cht=qr&chl=${direccion}`} className="img-fluid p-0" alt="BTC wallet" />
             </div>
+            <div className="col-10 col-lg-6  mx-auto text-center ">
+                <div className="position-relative mt-xxl-5 hash ">
+                    <div className="p-3">
+                        <span>{direccion}</span>
+                    </div>
+                    <CopyToClipboard text={direccion}>
+                        <FontAwesomeIcon icon={["fas", "copy"]} className="clipboard position-absolute top-0 end-0" />
+                    </CopyToClipboard>
+                </div>
+            </div>
+            <div className="col-10 mt-xxl-3 text-center mx-auto">
+                <span className="spinner-border m-2 align-middle spinner" role="status" />
+                <strong>{store.diccionario.btcP4y.p4gandoP1e}</strong>
+            </div>
+            <Link href="/">
+                <a type="button" className="btn btn-danger mt-3" onClick={() => limpiarPago()}>{store.diccionario.btcP4y.p4gandoB0ton}</a>
+            </Link>
         </div>
     )
 }
@@ -110,21 +109,15 @@ const Tiquet = (props) => {
 const Pagado = (props) => {
     const { monto, limpiarPago, store } = props
     return (
-        <div className="row justify-content-center text-center">
-            <div className="col-12 text-center mt-4">
-                <h1>¡Pago recibido!</h1>
-                <div className="mt-5">
-                    <h5>Se han recibido</h5>
-                    <h4><strong>{monto} BTC</strong></h4>
-                </div>
-                <div className="mt-3">
-                    <h5>Se enviarán a tu cuenta bancaria</h5>
-                    ₡ {Math.trunc(monto * store.tcBtc)} colones
-                </div>
-                <Link href="/">
-                    <a type="button" className="btn btn-primary mt-5" onClick={() => limpiarPago()}>salir</a>
-                </Link>
+        <div className="col-12 text-center mt-4">
+            <h1>{store.diccionario.btcP4y.recib0T1tulo}</h1>
+            <div className="mt-5">
+                <h5>{store.diccionario.btcP4y.recib0M0nto}</h5>
+                <h4><strong>{monto} BTC</strong></h4>
             </div>
+            <Link href="/">
+                <a type="button" className="btn btn-primary mt-5" onClick={() => limpiarPago()}>{store.diccionario.btcP4y.recib0B0ton}</a>
+            </Link>
         </div>
     )
 }

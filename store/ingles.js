@@ -34,5 +34,14 @@ export default {
     donate: {
         info3Titulo: "We made it easy for you!",
         info3Texto: "Many payment options can be insecure or complicated so we look at the two easiest and most reliable, select the one you want."
+    },
+    btcP4y: {
+        cargand0: "loading...",
+        p4gandoT1tulo: "Scan or copy the payment address",
+        p4gandoP1e: "Waiting for confirmation on the network",
+        p4gandoB0ton: "Cancel and exit",
+        recib0T1tulo: "Thank you for your Donation!",
+        recib0M0nto: "They have been received",
+        recib0B0ton: "exit"
     }
 }

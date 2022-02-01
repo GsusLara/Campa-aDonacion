@@ -18,16 +18,17 @@ export default function Donate() {
                 <div className="row justify-content-center">
                     <div className="col-6 col-md-2 m-5">
                         <Link href={"/donar"}>
-                        <a type="button" className="btnBtc p-2">
-                            <Image
-                                src={btc}
-                                alt="donar bitcoin"
-                            />
-                        </a>
+                            <a> <button type="button" className="btnBtc p-1">
+                                <Image
+                                    src={btc}
+                                    alt="donar bitcoin"
+                                />
+                            </button>
+                            </a>
                         </Link>
                     </div>
                     <div className="col-6 col-md-2 m-5">
-                        <button type="button"  className="btnPaypal p-2 pb-0">
+                        <button type="button" className="btnPaypal p-2 pb-0">
                             <Image
                                 src={paypal}
                                 alt="donar paypal"

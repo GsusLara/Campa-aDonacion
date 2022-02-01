@@ -3,6 +3,7 @@ const bitcoin = require('bitcoinjs-lib');
 
 export default function handler(req, res) {
   const zpub = [process.env.ZPUB1, process.env.ZPUB2];
+  const randomAddr = Math.floor(Math.random() * 21); 
   let pubkeys = [];
   const redMainet = Object.assign({}, bitcoin.networks.bitcoin,
     {
@@ -16,7 +17,7 @@ export default function handler(req, res) {
   if (req.method === 'GET') {
     for (let i = 0; i < 2; i++) {
       const zpubNode = bip32.fromBase58(zpub[i], redMainet);
-      const path = zpubNode.derivePath(`0/0`);
+      const path = zpubNode.derivePath(`0/${randomAddr}`);
       pubkeys.push(path.publicKey)
     }
     pubkeys.sort((a, b) => a.compare(b));
