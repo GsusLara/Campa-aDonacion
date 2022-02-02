@@ -16,9 +16,19 @@ export default function Donate() {
                     <p className="mt-5">{store.diccionario.donate.info3Texto}</p>
                 </div>
                 <div className="row justify-content-center">
-                    <div className="col-6 col-md-2 m-5">
+                    <div className="col-6 col-md-2 mx-5 my-2">
+                        <a href="https://www.paypal.com/donate/?hosted_button_id=GHGVYRF4PW2QW">
+                        <button type="button" className="btnPaypal p-2 pb-0">
+                            <Image
+                                src={paypal}
+                                alt="donar paypal"
+                            />
+                        </button>
+                        </a>
+                    </div>
+                    <div className="col-6 col-md-2 mx-5">
                         <Link href={"/donar"}>
-                            <a> <button type="button" className="btnBtc p-1">
+                            <a> <button type="button" className="btnBtc p-2">
                                 <Image
                                     src={btc}
                                     alt="donar bitcoin"
@@ -27,15 +37,6 @@ export default function Donate() {
                             </a>
                         </Link>
                     </div>
-                    <div className="col-6 col-md-2 m-5">
-                        <button type="button" className="btnPaypal p-2 pb-0">
-                            <Image
-                                src={paypal}
-                                alt="donar paypal"
-                            />
-                        </button>
-                    </div>
-
                 </div>
             </div>
             <Footer />
