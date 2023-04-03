@@ -1,4 +1,8 @@
 export default {
+    meta:{
+        description: "成為改變的一份子，貢獻力量建設更有前途的未來。",
+        keywords: "業務，捐贈，貨幣，比特幣，項目"
+    },
     navbar: {
         link2: "關於我們",
         link3: "目標",

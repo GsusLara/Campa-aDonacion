@@ -1,4 +1,8 @@
 export default {
+    meta:{
+        description: "Soyez acteur du changement, contribuez à construire un avenir plus prometteur.",
+        keywords: "entreprise, don, argent, btc, projets"
+    },
     navbar: {
         link2: "Qui sommes-nous ?",
         link3: "Objectifs",

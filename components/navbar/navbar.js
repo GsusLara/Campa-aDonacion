@@ -3,12 +3,14 @@ import { Context } from "../../store/appContext";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Link as LinkScroll } from "react-scroll"
 import { useRouter } from 'next/router';
+import Dropdown from 'react-bootstrap/Dropdown';
 
 
 export default function Navbar() {
     const { store, actions } = useContext(Context);
     const [btnMenu, setbtnMenu] = useState(false);
     const router = useRouter()
+    const { locale } = router;
     const lenguajeSelector = (idioma) => {
         router.push(router.pathname, router.pathname, { locale: idioma })
         actions.lenguaje(idioma);
@@ -17,24 +19,21 @@ export default function Navbar() {
         <nav className="navbar navbar-expand-sm fixed-top pb-0 topMenu">
             <div className="container">
                 <div className="me-5">
-                    {/* <span className="fs-1 p-0 idiomas" onClick={() => lenguajeSelector()}>
-                        <FontAwesomeIcon icon={["fas", "language"]} />
-                    </span> */}
-                    <div className="dropdown">
-                        <button className="btn dropdown-toggle p-0 m-0 idiomas" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    <Dropdown>
+                        <Dropdown.Toggle className="btn dropdown-toggle p-0 m-0 idiomas" id="dropdownMenuButton1">
                             <span className="fs-1 p-0 ">
                                 <FontAwesomeIcon icon={["fas", "language"]} />
                             </span>
-                        </button>
-                        <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                            <li className="dropdown-item" onClick={() => lenguajeSelector("en")}>EN</li>
-                            <li className="dropdown-item" onClick={() => lenguajeSelector("es")}>ES</li>
-                            <li className="dropdown-item" onClick={() => lenguajeSelector("fr")}>FR</li>
-                            <li className="dropdown-item" onClick={() => lenguajeSelector("ar")}>AR</li>
-                            <li className="dropdown-item" onClick={() => lenguajeSelector("zh")}>ZH</li>
-                            <li className="dropdown-item" onClick={() => lenguajeSelector("hi")}>HI</li>
-                        </ul>
-                    </div>
+                        </Dropdown.Toggle>
+                        <Dropdown.Menu>
+                            <Dropdown.Item  onClick={() => lenguajeSelector("en")}>EN</Dropdown.Item>
+                            <Dropdown.Item  onClick={() => lenguajeSelector("es")}>ES</Dropdown.Item>
+                            <Dropdown.Item  onClick={() => lenguajeSelector("fr")}>FR</Dropdown.Item>
+                            <Dropdown.Item  onClick={() => lenguajeSelector("ar")}>AR</Dropdown.Item>
+                            <Dropdown.Item  onClick={() => lenguajeSelector("zh")}>ZH</Dropdown.Item>
+                            <Dropdown.Item  onClick={() => lenguajeSelector("hi")}>HI</Dropdown.Item>
+                        </Dropdown.Menu>
+                    </Dropdown>
                 </div>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" onClick={() => setbtnMenu(!btnMenu)}>
                     <span className="menuicon fs-1" >{btnMenu ? <FontAwesomeIcon icon={["fas", "minus-square"]} /> : <FontAwesomeIcon icon={["fas", "caret-square-down"]} />}</span>

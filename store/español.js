@@ -1,4 +1,8 @@
 export default {
+    meta:{
+        description:"Se parte del cambio, contribuye en construir un futuro más prometedor.",
+        keywords:"negocio, donación, dinero, btc, proyectos"
+    },
     navbar: {
         link2: "¿Quiénes somos?",
         link3: "Objetivos",

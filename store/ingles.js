@@ -1,4 +1,8 @@
 export default {
+    meta:{
+        description: "Be part of the change, contribute to building a more promising future.",
+        keywords: "business, donation, money, btc, projects"
+    },
     navbar: {
         link2: "Who are we?",
         link3: "Our goals",

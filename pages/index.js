@@ -11,7 +11,7 @@ import Head from 'next/head'
 export default function Home() {
   const { store, actions } = useContext(Context);
   const router = useRouter();
-  const {locale}=router
+  const { locale } = router;
 
   useEffect(() => {
     actions.lenguaje(locale)
@@ -20,7 +20,9 @@ export default function Home() {
     <Layout>
       <Head>
         <title>fulfill dream</title>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content={store.diccionario.meta.description}/>
+        <meta name="keywords" content={store.diccionario.meta.keywords} />
       </Head>
       <Inicio />
       <About />
