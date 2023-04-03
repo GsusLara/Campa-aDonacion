@@ -1,6 +1,9 @@
 import ingles from "./ingles"
 import español from "./español"
 import frances from "./frances"
+import hindi from "./hindi"
+import chino from "./chino"
+import arabe from "./arabe"
 
 const getState = ({ getStore, getActions, setStore }) => {
 	return {
@@ -10,14 +13,30 @@ const getState = ({ getStore, getActions, setStore }) => {
 		},
 		actions: {
 			lenguaje: idioma => {
-				if (idioma == "en") {
+				switch (idioma) {
+				  case "en":
 					setStore({ diccionario: ingles });
-				} else if(idioma =="es"){
+					break;
+				  case "es":
 					setStore({ diccionario: español });
-				}else{
+					break;
+				  case "fr":
 					setStore({ diccionario: frances });
+					break;
+				  case "ar":
+					setStore({ diccionario: arabe });
+					break;
+					case "zh":
+					setStore({ diccionario: chino });
+					break;
+					case "hi":
+					setStore({ diccionario: hindi });
+					break;
+				  default:
+					setStore({ diccionario: ingles });
+					break;
 				}
-			}
+			  }
 		}
 	};
 };

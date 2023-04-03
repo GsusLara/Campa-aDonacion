@@ -30,6 +30,9 @@ export default function Navbar() {
                             <li className="dropdown-item" onClick={() => lenguajeSelector("en")}>EN</li>
                             <li className="dropdown-item" onClick={() => lenguajeSelector("es")}>ES</li>
                             <li className="dropdown-item" onClick={() => lenguajeSelector("fr")}>FR</li>
+                            <li className="dropdown-item" onClick={() => lenguajeSelector("ar")}>AR</li>
+                            <li className="dropdown-item" onClick={() => lenguajeSelector("zh")}>ZH</li>
+                            <li className="dropdown-item" onClick={() => lenguajeSelector("hi")}>HI</li>
                         </ul>
                     </div>
                 </div>

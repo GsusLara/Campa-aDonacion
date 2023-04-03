@@ -7,7 +7,7 @@ export default {
     footer: {
         Titulo: "POLITICAS DE USO Y DATOS",
         Texto: "De conformidad con las leyes de protección de datos personales, se informa que este sitio web no obtiene ni almacena ningún tipo de información del usuario.",
-        derechos: "2022 Todos los derechos reservados."
+        derechos: "2023 Todos los derechos reservados."
     },
     inicio: {
         titulo: "¡Sabias que puedes hacer un gran cambio!",

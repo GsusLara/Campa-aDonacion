@@ -7,7 +7,7 @@ export default {
     footer: {
         Titulo: "DATA AND USE POLICIES",
         Texto: "In accordance with personal data protection laws, it is reported that this website does not obtain or store any type of user information.",
-        derechos: "2022 All rights reserved."
+        derechos: "2023 All rights reserved."
     },
     inicio: {
         titulo: "Did you know you can make a big change!",
